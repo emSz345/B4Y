@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+/* ========================
+   CONTAINER GERAL
+======================== */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* ========================
+   CONTEÚDO CENTRALIZADO
+======================== */
+.login-content {
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  margin: 40px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ========================
+   ÁREA DA LOGO
+======================== */
+.logo-section {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0969fb;
+  height: auto;
+}
+
+.logo-image {
+  width: 80%;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+/* ========================
+   ÁREA DO FORMULÁRIO
+======================== */
+.login-title {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  margin-bottom: -20px;
+}
+
+.form-section {
+  width: 60%;
+  padding: 20px;
+}
+
+.form-section p,
+.form-section h2,
+.form-section Button {
+  text-align: center;
+}
+
+.form-section label {
+  font-size: 15px;
+}
+
+input {
+  margin-bottom: 7px;
+  left: 20px;
+}
+
+.login-recuperar-senha {
+  display: flex;
+  flex-direction: row;
+  margin-top: -20px;
+}
+
+/* ========================
+   estilo error
+======================== */
+.login-container-error {
+  display: flex;
+  margin-top: -20px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.login-container-error .error {
+  font-size: 12px;
+  color: red;
+}
+
+/* ========================
+   LINKS E TERMOS
+======================== */
+.radio-container {
+  margin-bottom: 10px;
+}
+
+.termos-label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espaçamento natural */
+  font-size: 14px;
+}
+
+.checkbox-ajustado {
+  margin: 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.crie-conta {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.crie-conta:hover {
+  color: rgb(206, 51, 24);
+  opacity: 0.6;
+}
+
+/* ========================
+   TÍTULOS E TEXTOS
+======================== */
+.login-bemvido {
+  font-size: 28px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 25px;
+}
+
+.ou {
+  color: #757575;
+  margin-top: 10px;
+}
+
+/* ========================
+  LOGIN SOCIAL
+======================== */
+.social-login {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 15px;
+}
+
+.login-alerta-google {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #e6f4ea;
+  color: #2e7d32;
+  padding: 15px 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 15px;
+  font-weight: 500;
+  animation: slideInFadeOut 2s ease forwards;
+  z-index: 1000;
+}
+
+.login-alerta-google .check {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.login-alerta-facebook {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  padding: 15px 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 15px;
+  font-weight: 500;
+  animation: slideInFadeOut 2s ease forwards;
+  z-index: 1000;
+}
+
+.login-alerta-facebook .check {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.alerta-erro-google,
+.alerta-erro-facebook {
+  position: fixed;
+  top: 130px;
+  right: 20px;
+  background-color: #fbe9e7;
+  color: #d32f2f;
+  padding: 15px 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 15px;
+  font-weight: 500;
+  animation: slideInFadeOut 3s ease forwards;
+  z-index: 1000;
+}
+
+.alerta-erro-facebook {
+  top: 180px;
+}
+
+.mensagem-sucesso {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 500;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFadeOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* ========================
+   RESPONSIVIDADE
+======================== */
+@media (max-width: 768px) {
+  .login-content {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .logo-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .logo-image {
+    max-width: 150px;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .social-login {
+    gap: 10px;
+  }
+}
+
+/* ========================
+   DICA SENHA
+======================== */
+
+.password-hint {
+  font-size: 12px;         /* Tamanho de fonte menor */
+  color: #888;              /* Cor cinza claro, para ser discreto */
+  margin-top: 0px;         /* Um pequeno espaço acima da mensagem */
+  margin-bottom: 0;        /* Remove a margem de baixo padrão do <p> */
+  text-align: left;        /* Alinha o texto à esquerda */
+  padding-left: 5px;       /* Um pequeno recuo para alinhar com o texto do input */
+}
+
+/* ========================
+   CADASTRO VERIFICAÇÃO
+======================== */
+
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #007bff; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
