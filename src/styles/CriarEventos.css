@@ -919,7 +919,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  height: 200px;
+  height: 300px;
   /* Altura fixa para a área de upload */
   display: flex;
   flex-direction: column;
@@ -951,7 +951,7 @@
 
 .image-preview {
   max-width: 100%;
-  max-height: 150px;
+  max-height: 200px;
   /* Limita a altura da imagem de preview */
   object-fit: contain;
   border-radius: 5px;
@@ -1118,4 +1118,42 @@
 .btn-proximo:hover {
   background-color: #0056b3;
   transform: translateY(-2px);
+}
+
+/* Estilo para a div que contém os botões no header */
+.criar-header-botoes {
+  display: flex;
+  align-items: center; /* Alinha verticalmente o timer e o botão */
+  gap: 15px; /* Espaço entre o timer e o botão */
+}
+
+/* Estilo para o span do timer */
+.cooldown-timer {
+  background-color: #f0f0f0; /* Um fundo claro para destaque */
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: #333;
+  font-weight: bold;
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Opcional: Ajuste o botão de sair se precisar de mais espaço */
+.btn-salvar-sair {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  background-color: #e74c3c; /* Exemplo de cor para o botão sair */
+  color: white;
+}
+
+.btn-salvar-sair:hover {
+  background-color: #c0392b;
 }

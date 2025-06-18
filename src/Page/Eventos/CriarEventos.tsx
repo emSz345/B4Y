@@ -377,22 +377,17 @@ function CriarEventos() {
           Crie <span className="criar-dubtitle">seu evento</span>
         </h1>
         <div className="criar-header-botoes">
+          {/* Adição do timer aqui */}
+          {isCooldown && cooldownTimeLeft !== null && (
+            <span className="cooldown-timer">
+              Próximo envio disponível em: {formatTime(cooldownTimeLeft)}
+            </span>
+          )}
           <button className="btn-salvar-sair" onClick={handleAbrirModal}>
             {/* Ícone de saída SVG */}
             <ImExit></ImExit>
             Sair
           </button>
-          {etapaAtual === 6 && (
-            <button className="criar-btn-enviar" onClick={handleEnviarAnalise} disabled={isCooldown}>
-              {isCooldown
-                ? `Aguarde... (${formatTime(cooldownTimeLeft || 0)})`
-                : 'Enviar para Análise'}
-              {/* Ícone de envio SVG */}
-              <svg xmlns="http://www.w3.org/248/svg" viewBox="0 0 24 24" fill="currentColor" width="16px" height="16px">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-              </svg>
-            </button>
-          )}
         </div>
       </header>
 
