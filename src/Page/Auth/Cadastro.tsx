@@ -8,7 +8,7 @@ import SocialButton from "../../components/ui/SocialButton/SocialButton";
 import TermosContent from '../../Page/Public/TermosContent';
 
 import "../../styles/Login.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo-blue.png";
 import googleIcon from "../../assets/logo-google.png";
 import facebookIcon from "../../assets/logo-facebook.png";
 

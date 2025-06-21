@@ -5,7 +5,7 @@ import '../../styles/Home.css'
 import Bolinhas from '../../components/ui/Bolinhas/Bolinhas';
 import Carrossel from '../../components/sections/Home/Carrossel/Carrossel';
 import Detalhes from '../../components/sections/Home/Shows/Rock/Rock';
-import Cidades from '../../components/sections/Home/Cidades/Cidades';
+import Cidades from '../../components/sections/Home/Estados/Cidades';
 import Banner from '../../components/sections/Home/Banner/Banner';
 import EventCard from '../../components/sections/Home/Evento/EventoCard';
 import Rodape from '../../components/layout/Footer/Footer';

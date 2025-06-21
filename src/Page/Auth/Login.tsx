@@ -258,7 +258,7 @@ const Login: React.FC = () => {
       )}
       <div className="login-content">
         <div className="logo-section">
-          <Link to='/Home' title="Voltar para Home">
+          <Link to='/Home' >
             <img src={logo} alt="Logo" className="logo-image" />
           </Link>
         </div>
